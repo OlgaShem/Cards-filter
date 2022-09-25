@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Filter</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main>
+        <section class="content">
+            <section class="filters">
+                <h1 class="main-title">Dresses</h1>
+                <button class="button button_all" onclick="getAll()">All</button>
+                <div class="size">
+                    <p class="size__title">Sizes</p>
+                    <button class="button" onclick="selectSize('S')">S</button>
+                    <button class="button" onclick="selectSize('M')">M</button>
+                    <button class="button" onclick="selectSize('L')">L</button>
+                    <button class="button" onclick="selectSize('XL')">XL</button>
+                </div>
+                <div class="color">
+                    <p class="color__title">Colors</p>
+                    <button class="button" onclick="selectColor('white')">White</button>
+                    <button class="button" onclick="selectColor('black')">Black</button>
+                    <button class="button" onclick="selectColor('red')">Red</button>
+                    <button class="button" onclick="selectColor('green')">Green</button>
+                </div>
+                <div class="price">
+                    <p class="price__title">Price</p>
+                    <button class="button" onclick="selectPriceLow()">1-50$</button>
+                    <button class="button" onclick="selectPrice()">51-100$</button>
+                    <button class="button" onclick="selectPriceHigh()">Over 100$</button>
+                </div>
+            </section>
+            <section id="cards" class="cards">
+            </section>
+        </section>
+    </main>
+</body>
+</html>
